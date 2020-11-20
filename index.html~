@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Scrolling Nav - Start Bootstrap Template</title>
+  <title>HABNet</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,10 +33,22 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link js-scroll-trigger" href="#abstract">Abstract</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#poster">Poster</a>
+          </li>
+	  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#downloadr">Downloads</a>
+          </li>
+	  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#code">Code</a>
+          </li>
+	  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#citation">Citation</a>
+          </li>
+	  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#ack">Acknowlegement</a>
           </li>
         </ul>
       </div>
@@ -45,8 +57,8 @@
 
   <header class="bg-primary text-white">
     <div class="container text-center">
-      <h1>Welcome to Scrolling Nav</h1>
-      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+      <h1>HABNet: Machine Learning, Remote
+Sensing Based Detection of Harmful Algal Blooms</h1>
     </div>
   </header>
 
@@ -54,40 +66,133 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>About this page</h2>
-          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-          <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-          </ul>
+            <h2>About</h2>
+            <p>This project is concerned with the application of machine
+learning techniques to develop a state-of-the-art detection and
+prediction system for spatiotemporal events found within remote
+sensing data; specifically, Harmful Algal Bloom events (HABs).
+            </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services" class="bg-light">
+  <section id="abstract" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Services we offer</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+            <h2>Abstract</h2>
+            <p>	This paper describes the application of machine
+learning techniques to develop a state-of-the-art detection and
+prediction system for spatiotemporal events found within remote
+sensing data; specifically, Harmful Algal Bloom events (HABs).
+We propose an HAB detection system based on: a ground truth
+historical record of HAB events, a novel spatiotemporal datacube
+representation of each event (from MODIS and GEBCO bathymetry
+data) and a variety of machine learning architectures utilising
+state-of-the-art spatial and temporal analysis methods based on
+Convolutional Neural Networks (CNNs), Long Short-Term Memory
+(LSTM) components together with Random Forest and Support
+VectorMachine (SVM) classification methods.
+This work has focused specifically on the case study of the detection
+of Karenia Brevis Algae (K. brevis) HAB events within the coastal
+waters of Florida (over 2850 events from 2003 to 2018; an order of
+magnitude larger than any previousmachine learning detection study
+into HAB events).
+The development of multimodal spatiotemporal datacube data
+structures and associated novel machine learning methods give a
+unique architecture for the automatic detection of environmental
+events. Specifically, when applied to the detection of HAB events it
+gives a maximum detection accuracy of 91%and a Kappa coefficient
+of 0.81 for the Florida data considered.
+A HAB forecast system was also developed where a temporal
+subset of each datacube was used to predict the presence of a HAB
+in the future. This system was not significantly less accurate than the
+detection system being able to predict with 86% accuracy up to 8
+days in the future.
+            </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="poster">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+	<h2 id="poster">Poster</h2>
+
+        <p><a href="poster.pdf"><img src="poster.png" alt="Poster" width = 300 class="center" /></a></p>
         </div>
       </div>
     </div>
   </section>
+
+    <section id="downloads">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+        <h2 id="downloads">Downloads</h2>	
+        <ul>
+           <li>Paper <a href="https://ieeexplore.ieee.org/abstract/document/9113293">[PDF]</a> <a href="https://arxiv.org/abs/1912.02305">[ArXiv]</a></li>
+           <li>Supplementary <a href="poster.pdf">[Poster]</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="code">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h2>Code (on Github)</h2>
+	    <ul>
+	    <li><a href='https://github.com/csprh/extractData'>Matlab Based Code for DataCube Extraction</a> </li>
+	    <li><a href='https://github.com/csprh/modelHAB'>Python code for HAB classification</a> </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section id="code">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+	    <h2>Citation</h2>
+            <div class="citation">
+                <pre>
+@article{hill2020habnet,
+  title={HABNet: Machine Learning, Remote Sensing-Based Detection of Harmful Algal Blooms},
+  author={Hill, Paul R and Kumar, Anurag and Temimi, Marouane and Bull, David R},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  volume={13},
+  pages={3229--3239},
+  year={2020},
+  publisher={IEEE}
+}
+                </pre>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section id="code">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+	    <h2>Acknowlegement</h2>
+	    <p>We would like to thank the British Council for funding:
+British Council Award ref 279334808. The FWC for the ground
+truth data in Florida and EAD (UAE) for the ground truth data in
+the Arabian Gulf. </p> 
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
