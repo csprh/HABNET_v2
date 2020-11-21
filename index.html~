@@ -42,7 +42,7 @@
             <a class="nav-link js-scroll-trigger" href="#poster">Poster</a>
           </li>
 	  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#downloadr">Downloads</a>
+            <a class="nav-link js-scroll-trigger" href="#download">Downloads</a>
           </li>
 	  <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#code">Code</a>
@@ -65,7 +65,7 @@ Sensing Based Detection of Harmful Algal Blooms</h1>
     </div>
   </header>
 
-    <section id="authors">
+  <section id="authors">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
@@ -95,12 +95,12 @@ sensing data; specifically, Harmful Algal Bloom events (HABs).
     </div>
   </section>
 
-  <section id="abstract" class="bg-light">
+  <section id="abstract">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
             <h2>Abstract</h2>
-            <p>	This paper describes the application of machine
+            This paper describes the application of machine
 learning techniques to develop a state-of-the-art detection and
 prediction system for spatiotemporal events found within remote
 sensing data; specifically, Harmful Algal Bloom events (HABs).
@@ -128,7 +128,7 @@ subset of each datacube was used to predict the presence of a HAB
 in the future. This system was not significantly less accurate than the
 detection system being able to predict with 86% accuracy up to 8
 days in the future.
-            </p>
+          
         </div>
       </div>
     </div>
@@ -140,13 +140,13 @@ days in the future.
         <div class="col-lg-8 mx-auto">
 	<h2 id="poster">Poster</h2>
 
-        <p><a href="poster.pdf"><img src="poster.png" alt="Poster" width = 300 class="center" /></a></p>
+        <a href="poster.pdf"><img src="poster.png" alt="Poster" width = 300 class="center" /></a>
         </div>
       </div>
     </div>
   </section>
 
-    <section id="downloads">
+  <section id="download">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
@@ -174,7 +174,7 @@ days in the future.
     </div>
   </section>
 
-    <section id="code">
+  <section id="citation">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
@@ -202,10 +202,10 @@ days in the future.
       <div class="row">
         <div class="col-lg-8 mx-auto">
 	    <h2>Acknowlegement</h2>
-	    <p>We would like to thank the British Council for funding:
+	    We would like to thank the British Council for funding:
 British Council Award ref 279334808. The FWC for the ground
 truth data in Florida and EAD (UAE) for the ground truth data in
-the Arabian Gulf. </p> 
+the Arabian Gulf. 
         </div>
       </div>
     </div>
@@ -215,7 +215,7 @@ the Arabian Gulf. </p>
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <p class="m-0 text-center text-white">VILab, The University of Bristol</p>
     </div>
     <!-- /.container -->
   </footer>
